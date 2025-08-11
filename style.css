@@ -1,0 +1,226 @@
+ html {
+  scroll-behavior: smooth;
+}
+    * {
+
+      box-sizing: border-box;
+
+    }
+
+    body {
+
+     margin: 0;
+      font-family: Arial, sans-serif;
+      /* Background gradient */
+      background-image: linear-gradient(135deg, black, white);
+      min-height: 100vh;
+      transition: background 0.5s ease;
+
+    }
+
+    /* Navbar */
+
+    .navbar {
+
+       position: sticky;
+      top: 0;
+background-color: black;
+      padding: 10px 20px;
+      overflow: hidden;
+      z-index: 100;
+      /* shadow akan muncul saat scroll */
+      box-shadow: none;
+      transition: box-shadow 0.3s ease;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+
+    }
+     .navbar.scrolled {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+     .navbar a {
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: gray;
+      background-color: whitesmoke;
+       border-radius: 10px;
+       transform: scale(1.05) ;
+       
+     }
+    .NAVI {
+      margin-left: auto; /* supaya ke kanan */
+    }   
+
+    
+
+
+ 
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .erikbudug {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      
+      margin: 0 auto;
+      background-color: #D3D3D3;
+      border: white;
+      border-radius: 10px;
+    }
+
+    .biodata {
+      flex: 1;
+      min-width: 250px;
+      padding: 20px;
+      background: #D3D3D3;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      margin: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+.biodata:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+    }
+
+ .biodata ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+   .foto {
+      justify-content: center;
+      text-align: center;
+       border-radius: 50%;
+      box-shadow: 0 8px 30px whitesmoke;
+    height: 300px;
+      width: 300px;
+      transition: box-shadow 0.5s ease;
+      margin-left: auto;
+      margin-right: auto;
+      object-fit: cover;
+    }
+
+ .foto:hover {
+      box-shadow: 0 0 40px 15px whitesmoke;
+      transform: scale(1.05);
+      transition: box-shadow 0.5s ease, transform 0.3s ease;
+      object-fit: cover;
+    }
+     .foto img {
+         justify-content: center;
+      text-align: center;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      border: 5px solid whitesmoke;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      
+    }
+
+      .pulse {
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+      margin: 50px auto;
+     
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    
+
+   
+
+    .prestasi {
+
+      padding: 20px;
+
+    background-color: 	#D3D3D3;
+
+    }
+
+    .prestasi h2 {
+
+      margin-top: 0;
+
+    }
+
+    .prestasi ul {
+
+      list-style-type: disc;
+
+      padding-left: 20px;
+
+    }
+
+    @media (max-width: 768px) {
+
+      .container {
+
+        flex-direction: column;
+
+        align-items: center;
+
+      }
+
+    }
+
+   .kontak-item {
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+
+}
+
+.kontak-item img {
+
+  margin-right: 10px;
+
+}
+
+.kontak-item a {
+
+  color: #0066cc;
+
+  text-decoration: none;
+
+}
+
+.kontak-item a:hover {
+
+  text-decoration: underline;
+
+}
